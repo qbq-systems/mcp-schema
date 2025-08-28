@@ -1,6 +1,7 @@
 package vdraft
 
 type ProgressNotificationProperties struct {
-	Method MethodClass   `json:"method"`
-	Params MagentaParams `json:"params"`
+	Jsonrpc JsonrpcClass  `json:"jsonrpc"`
+	Method  JsonrpcClass  `json:"method"`
+	Params  MagentaParams `json:"params"`
 }

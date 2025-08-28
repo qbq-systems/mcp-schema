@@ -1,6 +1,8 @@
 package vdraft
 
 type ElicitRequestProperties struct {
-	Method MethodClass  `json:"method"`
-	Params IndigoParams `json:"params"`
+	ID      EmptyResult  `json:"id"`
+	Jsonrpc JsonrpcClass `json:"jsonrpc"`
+	Method  JsonrpcClass `json:"method"`
+	Params  IndigoParams `json:"params"`
 }

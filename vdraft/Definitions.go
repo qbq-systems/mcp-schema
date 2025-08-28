@@ -24,13 +24,14 @@ type Definitions struct {
 	EmbeddedResource                EmbeddedResource            `json:"EmbeddedResource"`
 	EmptyResult                     EmptyResult                 `json:"EmptyResult"`
 	EnumSchema                      EnumSchema                  `json:"EnumSchema"`
+	Error                           Error                       `json:"Error"`
 	GetPromptRequest                GetPromptRequest            `json:"GetPromptRequest"`
 	GetPromptResult                 GetPromptResult             `json:"GetPromptResult"`
 	ImageContent                    Content                     `json:"ImageContent"`
 	Implementation                  Implementation              `json:"Implementation"`
 	InitializeRequest               InitializeRequest           `json:"InitializeRequest"`
 	InitializeResult                InitializeResult            `json:"InitializeResult"`
-	InitializedNotification         InitializedNotification     `json:"InitializedNotification"`
+	InitializedNotification         EdNotification              `json:"InitializedNotification"`
 	JSONRPCError                    JSONRPCError                `json:"JSONRPCError"`
 	JSONRPCMessage                  JsonrpcMessage              `json:"JSONRPCMessage"`
 	JSONRPCNotification             JSONRPCNotification         `json:"JSONRPCNotification"`
@@ -42,7 +43,7 @@ type Definitions struct {
 	ListResourceTemplatesResult     ListResourceTemplatesResult `json:"ListResourceTemplatesResult"`
 	ListResourcesRequest            ListSRequest                `json:"ListResourcesRequest"`
 	ListResourcesResult             ListResourcesResult         `json:"ListResourcesResult"`
-	ListRootsRequest                InitializedNotification     `json:"ListRootsRequest"`
+	ListRootsRequest                Request                     `json:"ListRootsRequest"`
 	ListRootsResult                 ListRootsResult             `json:"ListRootsResult"`
 	ListToolsRequest                ListSRequest                `json:"ListToolsRequest"`
 	ListToolsResult                 ListToolsResult             `json:"ListToolsResult"`
@@ -54,13 +55,13 @@ type Definitions struct {
 	NumberSchema                    NumberSchema                `json:"NumberSchema"`
 	PaginatedRequest                PaginatedRequest            `json:"PaginatedRequest"`
 	PaginatedResult                 PaginatedResult             `json:"PaginatedResult"`
-	PingRequest                     InitializedNotification     `json:"PingRequest"`
+	PingRequest                     Request                     `json:"PingRequest"`
 	PrimitiveSchemaDefinition       JsonrpcMessage              `json:"PrimitiveSchemaDefinition"`
 	ProgressNotification            ProgressNotification        `json:"ProgressNotification"`
 	ProgressToken                   ProgressToken               `json:"ProgressToken"`
 	Prompt                          Prompt                      `json:"Prompt"`
 	PromptArgument                  PromptArgument              `json:"PromptArgument"`
-	PromptListChangedNotification   InitializedNotification     `json:"PromptListChangedNotification"`
+	PromptListChangedNotification   EdNotification              `json:"PromptListChangedNotification"`
 	PromptMessage                   PromptMessage               `json:"PromptMessage"`
 	PromptReference                 PromptReference             `json:"PromptReference"`
 	ReadResourceRequest             ReadResourceRequest         `json:"ReadResourceRequest"`
@@ -70,14 +71,14 @@ type Definitions struct {
 	Resource                        Resource                    `json:"Resource"`
 	ResourceContents                ResourceContentsClass       `json:"ResourceContents"`
 	ResourceLink                    Resource                    `json:"ResourceLink"`
-	ResourceListChangedNotification InitializedNotification     `json:"ResourceListChangedNotification"`
+	ResourceListChangedNotification EdNotification              `json:"ResourceListChangedNotification"`
 	ResourceTemplate                Resource                    `json:"ResourceTemplate"`
 	ResourceTemplateReference       ResourceTemplateReference   `json:"ResourceTemplateReference"`
 	ResourceUpdatedNotification     ReadResourceRequest         `json:"ResourceUpdatedNotification"`
 	Result                          Result                      `json:"Result"`
 	Role                            LoggingLevel                `json:"Role"`
 	Root                            Root                        `json:"Root"`
-	RootsListChangedNotification    InitializedNotification     `json:"RootsListChangedNotification"`
+	RootsListChangedNotification    EdNotification              `json:"RootsListChangedNotification"`
 	SamplingMessage                 SamplingMessage             `json:"SamplingMessage"`
 	ServerCapabilities              ServerCapabilities          `json:"ServerCapabilities"`
 	ServerNotification              ClientNotification          `json:"ServerNotification"`
@@ -90,6 +91,6 @@ type Definitions struct {
 	TextResourceContents            ResourceContents            `json:"TextResourceContents"`
 	Tool                            Tool                        `json:"Tool"`
 	ToolAnnotations                 ToolAnnotations             `json:"ToolAnnotations"`
-	ToolListChangedNotification     InitializedNotification     `json:"ToolListChangedNotification"`
+	ToolListChangedNotification     EdNotification              `json:"ToolListChangedNotification"`
 	UnsubscribeRequest              ReadResourceRequest         `json:"UnsubscribeRequest"`
 }

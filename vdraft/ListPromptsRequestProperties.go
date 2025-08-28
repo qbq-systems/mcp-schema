@@ -1,6 +1,8 @@
 package vdraft
 
 type ListPromptsRequestProperties struct {
-	Method MethodClass     `json:"method"`
-	Params AmbitiousParams `json:"params"`
+	ID      EmptyResult     `json:"id"`
+	Jsonrpc JsonrpcClass    `json:"jsonrpc"`
+	Method  JsonrpcClass    `json:"method"`
+	Params  AmbitiousParams `json:"params"`
 }

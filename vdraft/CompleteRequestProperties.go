@@ -1,6 +1,8 @@
 package vdraft
 
 type CompleteRequestProperties struct {
-	Method MethodClass     `json:"method"`
-	Params TentacledParams `json:"params"`
+	ID      EmptyResult     `json:"id"`
+	Jsonrpc JsonrpcClass    `json:"jsonrpc"`
+	Method  JsonrpcClass    `json:"method"`
+	Params  TentacledParams `json:"params"`
 }

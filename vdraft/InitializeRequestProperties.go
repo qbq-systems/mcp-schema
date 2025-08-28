@@ -1,6 +1,8 @@
 package vdraft
 
 type InitializeRequestProperties struct {
-	Method MethodClass     `json:"method"`
-	Params HilariousParams `json:"params"`
+	ID      EmptyResult     `json:"id"`
+	Jsonrpc JsonrpcClass    `json:"jsonrpc"`
+	Method  JsonrpcClass    `json:"method"`
+	Params  HilariousParams `json:"params"`
 }

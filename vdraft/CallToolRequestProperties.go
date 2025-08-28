@@ -1,6 +1,8 @@
 package vdraft
 
 type CallToolRequestProperties struct {
-	Method MethodClass  `json:"method"`
-	Params PurpleParams `json:"params"`
+	ID      EmptyResult  `json:"id"`
+	Jsonrpc JsonrpcClass `json:"jsonrpc"`
+	Method  JsonrpcClass `json:"method"`
+	Params  PurpleParams `json:"params"`
 }

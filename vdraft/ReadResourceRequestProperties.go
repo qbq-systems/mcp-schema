@@ -1,6 +1,8 @@
 package vdraft
 
 type ReadResourceRequestProperties struct {
-	Method MethodClass  `json:"method"`
-	Params FriskyParams `json:"params"`
+	ID      *EmptyResult `json:"id,omitempty"`
+	Jsonrpc JsonrpcClass `json:"jsonrpc"`
+	Method  JsonrpcClass `json:"method"`
+	Params  FriskyParams `json:"params"`
 }

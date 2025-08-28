@@ -1,6 +1,7 @@
 package vdraft
 
 type LoggingMessageNotificationProperties struct {
-	Method MethodClass   `json:"method"`
-	Params CunningParams `json:"params"`
+	Jsonrpc JsonrpcClass  `json:"jsonrpc"`
+	Method  JsonrpcClass  `json:"method"`
+	Params  CunningParams `json:"params"`
 }

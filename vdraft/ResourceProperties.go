@@ -9,6 +9,6 @@ type ResourceProperties struct {
 	Size        *Cursor          `json:"size,omitempty"`
 	Title       Cursor           `json:"title"`
 	URI         *BlobClass       `json:"uri,omitempty"`
-	Type        *MethodClass     `json:"type,omitempty"`
+	Type        *JsonrpcClass    `json:"type,omitempty"`
 	URITemplate *BlobClass       `json:"uriTemplate,omitempty"`
 }

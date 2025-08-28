@@ -1,6 +1,8 @@
 package vdraft
 
 type PaginatedRequestProperties struct {
-	Method Default         `json:"method"`
-	Params AmbitiousParams `json:"params"`
+	ID      EmptyResult     `json:"id"`
+	Jsonrpc JsonrpcClass    `json:"jsonrpc"`
+	Method  Default         `json:"method"`
+	Params  AmbitiousParams `json:"params"`
 }

@@ -1,7 +1,7 @@
 package vdraft
 
 type PromptReferenceProperties struct {
-	Name  Cursor      `json:"name"`
-	Title Cursor      `json:"title"`
-	Type  MethodClass `json:"type"`
+	Name  Cursor       `json:"name"`
+	Title Cursor       `json:"title"`
+	Type  JsonrpcClass `json:"type"`
 }
