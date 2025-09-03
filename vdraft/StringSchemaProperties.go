@@ -1,6 +1,7 @@
 package vdraft
 
 type StringSchemaProperties struct {
+	Default     Default      `json:"default"`
 	Description Default      `json:"description"`
 	Format      FormatClass  `json:"format"`
 	MaxLength   Default      `json:"maxLength"`
