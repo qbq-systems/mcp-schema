@@ -27,6 +27,7 @@ type Definitions struct {
 	Error                           Error                       `json:"Error"`
 	GetPromptRequest                GetPromptRequest            `json:"GetPromptRequest"`
 	GetPromptResult                 GetPromptResult             `json:"GetPromptResult"`
+	Icon                            Icon                        `json:"Icon"`
 	ImageContent                    Content                     `json:"ImageContent"`
 	Implementation                  Implementation              `json:"Implementation"`
 	InitializeRequest               InitializeRequest           `json:"InitializeRequest"`
@@ -72,7 +73,7 @@ type Definitions struct {
 	ResourceContents                ResourceContentsClass       `json:"ResourceContents"`
 	ResourceLink                    Resource                    `json:"ResourceLink"`
 	ResourceListChangedNotification EdNotification              `json:"ResourceListChangedNotification"`
-	ResourceTemplate                Resource                    `json:"ResourceTemplate"`
+	ResourceTemplate                ResourceTemplate            `json:"ResourceTemplate"`
 	ResourceTemplateReference       ResourceTemplateReference   `json:"ResourceTemplateReference"`
 	ResourceUpdatedNotification     ReadResourceRequest         `json:"ResourceUpdatedNotification"`
 	Result                          Result                      `json:"Result"`

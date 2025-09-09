@@ -1,7 +1,9 @@
 package vdraft
 
 type ImplementationProperties struct {
-	Name    Cursor  `json:"name"`
-	Title   Cursor  `json:"title"`
-	Version Default `json:"version"`
+	Icons      Audience  `json:"icons"`
+	Name       Cursor    `json:"name"`
+	Title      Cursor    `json:"title"`
+	Version    Default   `json:"version"`
+	WebsiteURL BlobClass `json:"websiteUrl"`
 }
