@@ -28,6 +28,7 @@ type Definitions struct {
 	GetPromptRequest                GetPromptRequest            `json:"GetPromptRequest"`
 	GetPromptResult                 GetPromptResult             `json:"GetPromptResult"`
 	Icon                            Icon                        `json:"Icon"`
+	Icons                           Icons                       `json:"Icons"`
 	ImageContent                    Content                     `json:"ImageContent"`
 	Implementation                  Implementation              `json:"Implementation"`
 	InitializeRequest               InitializeRequest           `json:"InitializeRequest"`
