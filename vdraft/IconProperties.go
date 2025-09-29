@@ -2,6 +2,6 @@ package vdraft
 
 type IconProperties struct {
 	MIMEType Cursor    `json:"mimeType"`
-	Sizes    Cursor    `json:"sizes"`
+	Sizes    Sizes     `json:"sizes"`
 	Src      BlobClass `json:"src"`
 }
