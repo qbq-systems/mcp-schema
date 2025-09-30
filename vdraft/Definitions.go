@@ -74,7 +74,7 @@ type Definitions struct {
 	ResourceContents                ResourceContentsClass       `json:"ResourceContents"`
 	ResourceLink                    Resource                    `json:"ResourceLink"`
 	ResourceListChangedNotification EdNotification              `json:"ResourceListChangedNotification"`
-	ResourceTemplate                ResourceTemplate            `json:"ResourceTemplate"`
+	ResourceTemplate                Resource                    `json:"ResourceTemplate"`
 	ResourceTemplateReference       ResourceTemplateReference   `json:"ResourceTemplateReference"`
 	ResourceUpdatedNotification     ReadResourceRequest         `json:"ResourceUpdatedNotification"`
 	Result                          Result                      `json:"Result"`
@@ -91,7 +91,7 @@ type Definitions struct {
 	SubscribeRequest                ReadResourceRequest         `json:"SubscribeRequest"`
 	TextContent                     EmbeddedResource            `json:"TextContent"`
 	TextResourceContents            ResourceContents            `json:"TextResourceContents"`
-	Tool                            Tool                        `json:"Tool"`
+	Tool                            Resource                    `json:"Tool"`
 	ToolAnnotations                 ToolAnnotations             `json:"ToolAnnotations"`
 	ToolListChangedNotification     EdNotification              `json:"ToolListChangedNotification"`
 	UnsubscribeRequest              ReadResourceRequest         `json:"UnsubscribeRequest"`
