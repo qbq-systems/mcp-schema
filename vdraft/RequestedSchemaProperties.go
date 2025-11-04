@@ -1,7 +1,7 @@
 package vdraft
 
 type RequestedSchemaProperties struct {
-	Properties HilariousProperties `json:"properties"`
-	Required   Enum                `json:"required"`
-	Type       JsonrpcClass        `json:"type"`
+	Properties FluffyProperties `json:"properties"`
+	Required   StopSequences    `json:"required"`
+	Type       JsonrpcClass     `json:"type"`
 }

@@ -1,7 +1,0 @@
-package vdraft
-
-type InitializedNotificationProperties struct {
-	Jsonrpc JsonrpcClass `json:"jsonrpc"`
-	Method  JsonrpcClass `json:"method"`
-	Params  Result       `json:"params"`
-}

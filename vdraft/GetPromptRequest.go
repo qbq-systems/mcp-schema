@@ -1,8 +1,0 @@
-package vdraft
-
-type GetPromptRequest struct {
-	Description string                     `json:"description"`
-	Properties  GetPromptRequestProperties `json:"properties"`
-	Required    []CallToolRequestRequired  `json:"required"`
-	Type        AnnotationsType            `json:"type"`
-}
