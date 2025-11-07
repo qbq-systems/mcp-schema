@@ -7,7 +7,7 @@ type Definitions struct {
 	BlobResourceContents              ResourceContents                 `json:"BlobResourceContents"`
 	BooleanSchema                     BooleanSchema                    `json:"BooleanSchema"`
 	CallToolRequest                   CallToolRequest                  `json:"CallToolRequest"`
-	CallToolRequestParams             RequestParams                    `json:"CallToolRequestParams"`
+	CallToolRequestParams             CallToolRequestParams            `json:"CallToolRequestParams"`
 	CallToolResult                    CallToolResult                   `json:"CallToolResult"`
 	CancelledNotification             CallToolRequest                  `json:"CancelledNotification"`
 	CancelledNotificationParams       CancelledNotificationParams      `json:"CancelledNotificationParams"`
@@ -31,7 +31,7 @@ type Definitions struct {
 	EnumSchema                        EnumSchema                       `json:"EnumSchema"`
 	Error                             Error                            `json:"Error"`
 	GetPromptRequest                  CallToolRequest                  `json:"GetPromptRequest"`
-	GetPromptRequestParams            RequestParams                    `json:"GetPromptRequestParams"`
+	GetPromptRequestParams            GetPromptRequestParams           `json:"GetPromptRequestParams"`
 	GetPromptResult                   GetPromptResult                  `json:"GetPromptResult"`
 	Icon                              Icon                             `json:"Icon"`
 	Icons                             Icons                            `json:"Icons"`
@@ -82,7 +82,7 @@ type Definitions struct {
 	ReadResourceResult                ReadResourceResult               `json:"ReadResourceResult"`
 	Request                           Notification                     `json:"Request"`
 	RequestID                         ProgressToken                    `json:"RequestId"`
-	RequestParams                     RequestParamsClass               `json:"RequestParams"`
+	RequestParams                     RequestParams                    `json:"RequestParams"`
 	Resource                          Resource                         `json:"Resource"`
 	ResourceContents                  ResourceContentsClass            `json:"ResourceContents"`
 	ResourceLink                      Resource                         `json:"ResourceLink"`
