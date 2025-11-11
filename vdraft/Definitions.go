@@ -28,7 +28,7 @@ type Definitions struct {
 	ElicitResult                      ElicitResult                     `json:"ElicitResult"`
 	EmbeddedResource                  EmbeddedResource                 `json:"EmbeddedResource"`
 	EmptyResult                       EmptyResult                      `json:"EmptyResult"`
-	EnumSchema                        EnumSchema                       `json:"EnumSchema"`
+	EnumSchema                        ClientNotification               `json:"EnumSchema"`
 	Error                             Error                            `json:"Error"`
 	GetPromptRequest                  CallToolRequest                  `json:"GetPromptRequest"`
 	GetPromptRequestParams            GetPromptRequestParams           `json:"GetPromptRequestParams"`
@@ -46,6 +46,7 @@ type Definitions struct {
 	JSONRPCNotification               JSONRPCNotificationClass         `json:"JSONRPCNotification"`
 	JSONRPCRequest                    JSONRPCNotificationClass         `json:"JSONRPCRequest"`
 	JSONRPCResponse                   JSONRPCResponse                  `json:"JSONRPCResponse"`
+	LegacyTitledEnumSchema            LegacyTitledEnumSchema           `json:"LegacyTitledEnumSchema"`
 	ListPromptsRequest                CallToolRequest                  `json:"ListPromptsRequest"`
 	ListPromptsResult                 ListPromptsResult                `json:"ListPromptsResult"`
 	ListResourceTemplatesRequest      CallToolRequest                  `json:"ListResourceTemplatesRequest"`
@@ -61,6 +62,7 @@ type Definitions struct {
 	LoggingMessageNotificationParams  LoggingMessageNotificationParams `json:"LoggingMessageNotificationParams"`
 	ModelHint                         ModelHint                        `json:"ModelHint"`
 	ModelPreferences                  ModelPreferences                 `json:"ModelPreferences"`
+	MultiSelectEnumSchema             ClientNotification               `json:"MultiSelectEnumSchema"`
 	Notification                      Notification                     `json:"Notification"`
 	NotificationParams                NotificationParams               `json:"NotificationParams"`
 	NumberSchema                      NumberSchema                     `json:"NumberSchema"`
@@ -103,14 +105,19 @@ type Definitions struct {
 	ServerResult                      ClientNotification               `json:"ServerResult"`
 	SetLevelRequest                   CallToolRequest                  `json:"SetLevelRequest"`
 	SetLevelRequestParams             SetLevelRequestParams            `json:"SetLevelRequestParams"`
+	SingleSelectEnumSchema            ClientNotification               `json:"SingleSelectEnumSchema"`
 	StringSchema                      StringSchema                     `json:"StringSchema"`
 	SubscribeRequest                  CallToolRequest                  `json:"SubscribeRequest"`
 	SubscribeRequestParams            ReadResourceRequestParamsClass   `json:"SubscribeRequestParams"`
 	TextContent                       EmbeddedResource                 `json:"TextContent"`
 	TextResourceContents              ResourceContents                 `json:"TextResourceContents"`
+	TitledMultiSelectEnumSchema       TitledMultiSelectEnumSchema      `json:"TitledMultiSelectEnumSchema"`
+	TitledSingleSelectEnumSchema      TitledSingleSelectEnumSchema     `json:"TitledSingleSelectEnumSchema"`
 	Tool                              Resource                         `json:"Tool"`
 	ToolAnnotations                   ToolAnnotations                  `json:"ToolAnnotations"`
 	ToolListChangedNotification       CallToolRequest                  `json:"ToolListChangedNotification"`
 	UnsubscribeRequest                CallToolRequest                  `json:"UnsubscribeRequest"`
 	UnsubscribeRequestParams          ReadResourceRequestParamsClass   `json:"UnsubscribeRequestParams"`
+	UntitledMultiSelectEnumSchema     UntitledMultiSelectEnumSchema    `json:"UntitledMultiSelectEnumSchema"`
+	UntitledSingleSelectEnumSchema    TitledSingleSelectEnumSchema     `json:"UntitledSingleSelectEnumSchema"`
 }
