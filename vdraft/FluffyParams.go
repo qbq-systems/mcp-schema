@@ -1,6 +1,6 @@
 package vdraft
 
-type ParamsClass struct {
+type FluffyParams struct {
 	AdditionalProperties AdditionalPropertiesClass `json:"additionalProperties"`
 	Type                 AnnotationsType           `json:"type"`
 }

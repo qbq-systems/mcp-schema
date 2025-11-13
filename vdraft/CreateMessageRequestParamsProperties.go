@@ -5,7 +5,7 @@ type CreateMessageRequestParamsProperties struct {
 	IncludeContext   LoggingLevel     `json:"includeContext"`
 	MaxTokens        Cursor           `json:"maxTokens"`
 	Messages         Messages         `json:"messages"`
-	Metadata         Elicitation      `json:"metadata"`
+	Metadata         Sampling         `json:"metadata"`
 	ModelPreferences AnnotationsClass `json:"modelPreferences"`
 	StopSequences    StopSequences    `json:"stopSequences"`
 	SystemPrompt     Cursor           `json:"systemPrompt"`

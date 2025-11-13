@@ -24,8 +24,11 @@ type Definitions struct {
 	CreateMessageResult               CreateMessageResult              `json:"CreateMessageResult"`
 	Cursor                            Cursor                           `json:"Cursor"`
 	ElicitRequest                     CallToolRequest                  `json:"ElicitRequest"`
+	ElicitRequestFormParams           ElicitRequestFormParams          `json:"ElicitRequestFormParams"`
 	ElicitRequestParams               ElicitRequestParams              `json:"ElicitRequestParams"`
+	ElicitRequestURLParams            ElicitRequestURLParams           `json:"ElicitRequestURLParams"`
 	ElicitResult                      ElicitResult                     `json:"ElicitResult"`
+	ElicitationCompleteNotification   ElicitationCompleteNotification  `json:"ElicitationCompleteNotification"`
 	EmbeddedResource                  EmbeddedResource                 `json:"EmbeddedResource"`
 	EmptyResult                       EmptyResult                      `json:"EmptyResult"`
 	EnumSchema                        ClientNotification               `json:"EnumSchema"`
@@ -42,7 +45,7 @@ type Definitions struct {
 	InitializeResult                  InitializeResult                 `json:"InitializeResult"`
 	InitializedNotification           CallToolRequest                  `json:"InitializedNotification"`
 	JSONRPCError                      JSONRPCError                     `json:"JSONRPCError"`
-	JSONRPCMessage                    JsonrpcMessage                   `json:"JSONRPCMessage"`
+	JSONRPCMessage                    ElicitRequestParams              `json:"JSONRPCMessage"`
 	JSONRPCNotification               JSONRPCNotificationClass         `json:"JSONRPCNotification"`
 	JSONRPCRequest                    JSONRPCNotificationClass         `json:"JSONRPCRequest"`
 	JSONRPCResponse                   JSONRPCResponse                  `json:"JSONRPCResponse"`
@@ -70,7 +73,7 @@ type Definitions struct {
 	PaginatedRequestParams            PaginatedRequestParams           `json:"PaginatedRequestParams"`
 	PaginatedResult                   PaginatedResult                  `json:"PaginatedResult"`
 	PingRequest                       CallToolRequest                  `json:"PingRequest"`
-	PrimitiveSchemaDefinition         JsonrpcMessage                   `json:"PrimitiveSchemaDefinition"`
+	PrimitiveSchemaDefinition         ElicitRequestParams              `json:"PrimitiveSchemaDefinition"`
 	ProgressNotification              CallToolRequest                  `json:"ProgressNotification"`
 	ProgressNotificationParams        ProgressNotificationParams       `json:"ProgressNotificationParams"`
 	ProgressToken                     ProgressToken                    `json:"ProgressToken"`
@@ -116,6 +119,7 @@ type Definitions struct {
 	Tool                              Resource                         `json:"Tool"`
 	ToolAnnotations                   ToolAnnotations                  `json:"ToolAnnotations"`
 	ToolListChangedNotification       CallToolRequest                  `json:"ToolListChangedNotification"`
+	URLElicitationRequiredError       URLElicitationRequiredError      `json:"URLElicitationRequiredError"`
 	UnsubscribeRequest                CallToolRequest                  `json:"UnsubscribeRequest"`
 	UnsubscribeRequestParams          ReadResourceRequestParamsClass   `json:"UnsubscribeRequestParams"`
 	UntitledMultiSelectEnumSchema     UntitledMultiSelectEnumSchema    `json:"UntitledMultiSelectEnumSchema"`

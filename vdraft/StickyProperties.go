@@ -1,5 +1,6 @@
 package vdraft
 
 type StickyProperties struct {
-	AnyOf Of `json:"anyOf"`
+	AdditionalProperties Sampling        `json:"additionalProperties"`
+	Type                 AnnotationsType `json:"type"`
 }

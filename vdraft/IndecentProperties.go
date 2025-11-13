@@ -1,6 +1,6 @@
 package vdraft
 
 type IndecentProperties struct {
-	Enum Sizes        `json:"enum"`
-	Type JsonrpcClass `json:"type"`
+	Const Cursor `json:"const"`
+	Title Cursor `json:"title"`
 }
