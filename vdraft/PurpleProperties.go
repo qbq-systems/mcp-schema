@@ -1,5 +1,6 @@
 package vdraft
 
 type PurpleProperties struct {
-	ProgressToken AnnotationsClass `json:"progressToken"`
+	ProgressToken *AnnotationsElement   `json:"progressToken,omitempty"`
+	Meta          *GetTaskPayloadResult `json:"_meta,omitempty"`
 }

@@ -1,6 +1,7 @@
 package vdraft
 
 type SetLevelRequestParamsProperties struct {
-	Meta  Meta             `json:"_meta"`
-	Level AnnotationsClass `json:"level"`
+	Meta  GetTaskPayloadResult `json:"_meta"`
+	Level AnnotationsElement   `json:"level"`
+	Task  AnnotationsElement   `json:"task"`
 }

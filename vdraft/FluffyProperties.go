@@ -1,5 +1,6 @@
 package vdraft
 
 type FluffyProperties struct {
-	Arguments Arguments `json:"arguments"`
+	Form Metadata `json:"form"`
+	URL  Metadata `json:"url"`
 }

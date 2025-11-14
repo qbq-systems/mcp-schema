@@ -1,5 +1,7 @@
 package vdraft
 
 type StickyProperties struct {
-	ElicitationID Cursor `json:"elicitationId"`
+	Cancel   Metadata       `json:"cancel"`
+	List     Metadata       `json:"list"`
+	Requests PurpleRequests `json:"requests"`
 }

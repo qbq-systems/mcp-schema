@@ -1,8 +1,8 @@
 package vdraft
 
 type LoggingMessageNotificationParamsProperties struct {
-	Meta   Meta             `json:"_meta"`
-	Data   PurpleData       `json:"data"`
-	Level  AnnotationsClass `json:"level"`
-	Logger Cursor           `json:"logger"`
+	Meta   GetTaskPayloadResult `json:"_meta"`
+	Data   PurpleData           `json:"data"`
+	Level  AnnotationsElement   `json:"level"`
+	Logger Cursor               `json:"logger"`
 }

@@ -1,6 +1,6 @@
 package vdraft
 
-type ReadResourceRequestParamsClass struct {
+type ERequestParams struct {
 	Description string                              `json:"description"`
 	Properties  ReadResourceRequestParamsProperties `json:"properties"`
 	Required    []FormatElement                     `json:"required"`

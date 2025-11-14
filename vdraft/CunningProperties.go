@@ -1,6 +1,6 @@
 package vdraft
 
 type CunningProperties struct {
-	Enum Sizes        `json:"enum"`
-	Type JsonrpcClass `json:"type"`
+	AdditionalProperties EmptyResult     `json:"additionalProperties"`
+	Type                 AnnotationsType `json:"type"`
 }

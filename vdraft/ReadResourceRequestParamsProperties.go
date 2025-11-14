@@ -1,6 +1,7 @@
 package vdraft
 
 type ReadResourceRequestParamsProperties struct {
-	Meta Meta      `json:"_meta"`
-	URI  BlobClass `json:"uri"`
+	Meta GetTaskPayloadResult `json:"_meta"`
+	Task AnnotationsElement   `json:"task"`
+	URI  BlobClass            `json:"uri"`
 }

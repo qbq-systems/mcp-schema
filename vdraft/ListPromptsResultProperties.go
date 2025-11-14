@@ -1,7 +1,7 @@
 package vdraft
 
 type ListPromptsResultProperties struct {
-	Meta       Meta     `json:"_meta"`
-	NextCursor Cursor   `json:"nextCursor"`
-	Prompts    Messages `json:"prompts"`
+	Meta       GetTaskPayloadResult `json:"_meta"`
+	NextCursor Cursor               `json:"nextCursor"`
+	Prompts    Messages             `json:"prompts"`
 }

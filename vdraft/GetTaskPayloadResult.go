@@ -1,8 +1,8 @@
 package vdraft
 
-type Meta struct {
+type GetTaskPayloadResult struct {
 	AdditionalProperties AdditionalPropertiesClass `json:"additionalProperties"`
-	Description          string                    `json:"description"`
+	Description          *string                   `json:"description,omitempty"`
 	Type                 AnnotationsType           `json:"type"`
 	Properties           *PurpleProperties         `json:"properties,omitempty"`
 }

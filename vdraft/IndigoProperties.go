@@ -1,6 +1,6 @@
 package vdraft
 
 type IndigoProperties struct {
-	AdditionalProperties Metadata        `json:"additionalProperties"`
-	Type                 AnnotationsType `json:"type"`
+	Elicitation FluffyElicitation `json:"elicitation"`
+	Sampling    FluffySampling    `json:"sampling"`
 }

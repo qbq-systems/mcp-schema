@@ -1,7 +1,7 @@
 package vdraft
 
-type Elicitation struct {
+type FluffyTasks struct {
 	Description string                `json:"description"`
-	Properties  ElicitationProperties `json:"properties"`
+	Properties  MischievousProperties `json:"properties"`
 	Type        AnnotationsType       `json:"type"`
 }

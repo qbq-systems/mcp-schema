@@ -1,5 +1,5 @@
 package vdraft
 
 type IndecentProperties struct {
-	AnyOf Of `json:"anyOf"`
+	Create Metadata `json:"create"`
 }
