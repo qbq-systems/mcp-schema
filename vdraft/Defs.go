@@ -1,6 +1,6 @@
 package vdraft
 
-type Definitions struct {
+type Defs struct {
 	Annotations                       Annotations                       `json:"Annotations"`
 	AudioContent                      Content                           `json:"AudioContent"`
 	BaseMetadata                      BaseMetadata                      `json:"BaseMetadata"`

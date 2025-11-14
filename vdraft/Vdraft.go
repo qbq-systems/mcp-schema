@@ -19,6 +19,6 @@ func (r *Vdraft) Marshal() ([]byte, error) {
 }
 
 type Vdraft struct {
-	Schema      string      `json:"$schema"`
-	Definitions Definitions `json:"definitions"`
+	Schema string `json:"$schema"`
+	Defs   Defs   `json:"$defs"`
 }
