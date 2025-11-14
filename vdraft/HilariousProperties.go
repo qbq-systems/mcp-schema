@@ -1,5 +1,6 @@
 package vdraft
 
 type HilariousProperties struct {
-	Elicitations Messages `json:"elicitations"`
+	Const Cursor `json:"const"`
+	Title Cursor `json:"title"`
 }

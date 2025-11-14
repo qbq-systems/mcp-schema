@@ -1,6 +1,7 @@
 package vdraft
 
 type SamplingMessageProperties struct {
-	Content ClientNotification `json:"content"`
-	Role    EmptyResult        `json:"role"`
+	Meta    Meta          `json:"_meta"`
+	Content PurpleContent `json:"content"`
+	Role    EmptyResult   `json:"role"`
 }

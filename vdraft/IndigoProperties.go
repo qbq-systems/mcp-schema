@@ -1,5 +1,6 @@
 package vdraft
 
 type IndigoProperties struct {
-	AnyOf Of `json:"anyOf"`
+	AdditionalProperties Metadata        `json:"additionalProperties"`
+	Type                 AnnotationsType `json:"type"`
 }

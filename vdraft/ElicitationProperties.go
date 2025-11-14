@@ -1,6 +1,6 @@
 package vdraft
 
 type ElicitationProperties struct {
-	Form Sampling `json:"form"`
-	URL  Sampling `json:"url"`
+	Form Metadata `json:"form"`
+	URL  Metadata `json:"url"`
 }

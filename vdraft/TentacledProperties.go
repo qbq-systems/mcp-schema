@@ -1,5 +1,6 @@
 package vdraft
 
 type TentacledProperties struct {
-	ElicitationID Cursor `json:"elicitationId"`
+	AdditionalProperties EmptyResult     `json:"additionalProperties"`
+	Type                 AnnotationsType `json:"type"`
 }

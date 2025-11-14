@@ -1,6 +1,6 @@
 package vdraft
 
-type AnyOf struct {
+type AdditionalPropertiesAnyOf struct {
 	Items *Default   `json:"items,omitempty"`
 	Type  *TypeUnion `json:"type"`
 }

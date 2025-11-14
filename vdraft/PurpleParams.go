@@ -1,7 +1,7 @@
 package vdraft
 
 type PurpleParams struct {
-	Properties TentacledProperties `json:"properties"`
-	Required   []string            `json:"required"`
-	Type       AnnotationsType     `json:"type"`
+	Properties StickyProperties `json:"properties"`
+	Required   []string         `json:"required"`
+	Type       AnnotationsType  `json:"type"`
 }

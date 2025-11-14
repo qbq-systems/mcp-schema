@@ -102,6 +102,7 @@ type Definitions struct {
 	Root                              Root                             `json:"Root"`
 	RootsListChangedNotification      CallToolRequest                  `json:"RootsListChangedNotification"`
 	SamplingMessage                   SamplingMessage                  `json:"SamplingMessage"`
+	SamplingMessageContentBlock       ClientNotification               `json:"SamplingMessageContentBlock"`
 	ServerCapabilities                ServerCapabilities               `json:"ServerCapabilities"`
 	ServerNotification                ClientNotification               `json:"ServerNotification"`
 	ServerRequest                     ClientNotification               `json:"ServerRequest"`
@@ -118,7 +119,10 @@ type Definitions struct {
 	TitledSingleSelectEnumSchema      TitledSingleSelectEnumSchema     `json:"TitledSingleSelectEnumSchema"`
 	Tool                              Resource                         `json:"Tool"`
 	ToolAnnotations                   ToolAnnotations                  `json:"ToolAnnotations"`
+	ToolChoice                        ToolChoice                       `json:"ToolChoice"`
 	ToolListChangedNotification       CallToolRequest                  `json:"ToolListChangedNotification"`
+	ToolResultContent                 ToolResultContent                `json:"ToolResultContent"`
+	ToolUseContent                    ToolUseContent                   `json:"ToolUseContent"`
 	URLElicitationRequiredError       URLElicitationRequiredError      `json:"URLElicitationRequiredError"`
 	UnsubscribeRequest                CallToolRequest                  `json:"UnsubscribeRequest"`
 	UnsubscribeRequestParams          ReadResourceRequestParamsClass   `json:"UnsubscribeRequestParams"`
