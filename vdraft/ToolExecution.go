@@ -1,7 +1,7 @@
 package vdraft
 
-type Tools struct {
+type ToolExecution struct {
 	Description string                  `json:"description"`
-	Properties  BraggadociousProperties `json:"properties"`
+	Properties  ToolExecutionProperties `json:"properties"`
 	Type        AnnotationsType         `json:"type"`
 }

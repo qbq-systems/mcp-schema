@@ -1,5 +1,5 @@
 package vdraft
 
 type BraggadociousProperties struct {
-	Tools Tools `json:"tools"`
+	Call Metadata `json:"call"`
 }

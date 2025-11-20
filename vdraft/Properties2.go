@@ -1,5 +1,6 @@
 package vdraft
 
 type Properties2 struct {
-	AnyOf Of `json:"anyOf"`
+	Const Cursor `json:"const"`
+	Title Cursor `json:"title"`
 }

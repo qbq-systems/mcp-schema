@@ -1,7 +1,5 @@
 package vdraft
 
 type MischievousProperties struct {
-	Cancel   Metadata       `json:"cancel"`
-	List     Metadata       `json:"list"`
-	Requests FluffyRequests `json:"requests"`
+	Tools Tools `json:"tools"`
 }

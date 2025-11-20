@@ -1,8 +1,8 @@
 package vdraft
 
-type PurpleItems struct {
+type Tool struct {
 	Description string          `json:"description"`
-	Properties  Properties1     `json:"properties"`
+	Properties  ToolProperties  `json:"properties"`
 	Required    []string        `json:"required"`
 	Type        AnnotationsType `json:"type"`
 }

@@ -1,6 +1,6 @@
 package vdraft
 
 type Properties3 struct {
-	Const Cursor `json:"const"`
-	Title Cursor `json:"title"`
+	AdditionalProperties Metadata        `json:"additionalProperties"`
+	Type                 AnnotationsType `json:"type"`
 }

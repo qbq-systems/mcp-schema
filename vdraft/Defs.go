@@ -133,9 +133,10 @@ type Defs struct {
 	TextResourceContents              ResourceContents                 `json:"TextResourceContents"`
 	TitledMultiSelectEnumSchema       TitledMultiSelectEnumSchema      `json:"TitledMultiSelectEnumSchema"`
 	TitledSingleSelectEnumSchema      TitledSingleSelectEnumSchema     `json:"TitledSingleSelectEnumSchema"`
-	Tool                              Resource                         `json:"Tool"`
+	Tool                              Tool                             `json:"Tool"`
 	ToolAnnotations                   ToolAnnotations                  `json:"ToolAnnotations"`
 	ToolChoice                        ToolChoice                       `json:"ToolChoice"`
+	ToolExecution                     ToolExecution                    `json:"ToolExecution"`
 	ToolListChangedNotification       CallToolRequest                  `json:"ToolListChangedNotification"`
 	ToolResultContent                 ToolResultContent                `json:"ToolResultContent"`
 	ToolUseContent                    ToolUseContent                   `json:"ToolUseContent"`

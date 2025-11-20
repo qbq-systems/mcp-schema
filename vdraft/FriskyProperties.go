@@ -1,6 +1,7 @@
 package vdraft
 
 type FriskyProperties struct {
-	AdditionalProperties Metadata        `json:"additionalProperties"`
-	Type                 AnnotationsType `json:"type"`
+	Cancel   Metadata       `json:"cancel"`
+	List     Metadata       `json:"list"`
+	Requests FluffyRequests `json:"requests"`
 }
