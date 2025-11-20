@@ -1,6 +1,6 @@
 package vdraft
 
-type RequestParamsProperties struct {
+type TaskAugmentedRequestParamsProperties struct {
 	Meta GetTaskPayloadResult `json:"_meta"`
 	Task AnnotationsElement   `json:"task"`
 }

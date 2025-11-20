@@ -5,5 +5,4 @@ type CompleteRequestParamsProperties struct {
 	Argument Argument             `json:"argument"`
 	Context  Context              `json:"context"`
 	Ref      ClientNotification   `json:"ref"`
-	Task     AnnotationsElement   `json:"task"`
 }

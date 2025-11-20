@@ -1,7 +1,7 @@
 package vdraft
 
 type RequestParams struct {
-	Description string                  `json:"description"`
-	Properties  RequestParamsProperties `json:"properties"`
-	Type        AnnotationsType         `json:"type"`
+	Description string                       `json:"description"`
+	Properties  NotificationParamsProperties `json:"properties"`
+	Type        AnnotationsType              `json:"type"`
 }

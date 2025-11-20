@@ -5,5 +5,4 @@ type InitializeRequestParamsProperties struct {
 	Capabilities    EmptyResult          `json:"capabilities"`
 	ClientInfo      EmptyResult          `json:"clientInfo"`
 	ProtocolVersion Cursor               `json:"protocolVersion"`
-	Task            AnnotationsElement   `json:"task"`
 }
