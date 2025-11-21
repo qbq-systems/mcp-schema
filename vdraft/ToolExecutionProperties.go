@@ -1,5 +1,5 @@
 package vdraft
 
 type ToolExecutionProperties struct {
-	Task LoggingLevel `json:"task"`
+	TaskSupport LoggingLevel `json:"taskSupport"`
 }
