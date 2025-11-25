@@ -51,11 +51,12 @@ type Defs struct {
 	InitializeRequestParams           InitializeRequestParams          `json:"InitializeRequestParams"`
 	InitializeResult                  InitializeResult                 `json:"InitializeResult"`
 	InitializedNotification           CallToolRequest                  `json:"InitializedNotification"`
-	JSONRPCError                      JSONRPCError                     `json:"JSONRPCError"`
+	JSONRPCErrorResponse              JSONRPCErrorResponse             `json:"JSONRPCErrorResponse"`
 	JSONRPCMessage                    ElicitRequestParams              `json:"JSONRPCMessage"`
 	JSONRPCNotification               JSONRPCNotificationClass         `json:"JSONRPCNotification"`
 	JSONRPCRequest                    JSONRPCNotificationClass         `json:"JSONRPCRequest"`
-	JSONRPCResponse                   JSONRPCResponse                  `json:"JSONRPCResponse"`
+	JSONRPCResponse                   ElicitRequestParams              `json:"JSONRPCResponse"`
+	JSONRPCResultResponse             JSONRPCResultResponse            `json:"JSONRPCResultResponse"`
 	LegacyTitledEnumSchema            LegacyTitledEnumSchema           `json:"LegacyTitledEnumSchema"`
 	ListPromptsRequest                CallToolRequest                  `json:"ListPromptsRequest"`
 	ListPromptsResult                 ListPromptsResult                `json:"ListPromptsResult"`
