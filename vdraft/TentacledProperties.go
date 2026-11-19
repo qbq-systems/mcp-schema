@@ -1,6 +1,6 @@
 package vdraft
 
 type TentacledProperties struct {
-	Context Metadata `json:"context"`
-	Tools   Metadata `json:"tools"`
+	Code PurpleCode `json:"code"`
+	Data PurpleData `json:"data"`
 }

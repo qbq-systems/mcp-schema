@@ -1,7 +1,7 @@
 package vdraft
 
 type Roots struct {
-	Description string          `json:"description"`
-	Properties  RootsProperties `json:"properties"`
-	Type        AnnotationsType `json:"type"`
+	Description string                    `json:"description"`
+	Properties  AdditionalPropertiesClass `json:"properties"`
+	Type        TypeElement               `json:"type"`
 }

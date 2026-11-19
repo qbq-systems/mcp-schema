@@ -1,7 +1,7 @@
 package vdraft
 
 type CancelledNotificationParamsProperties struct {
-	Meta      GetTaskPayloadResult `json:"_meta"`
+	Meta      AdditionalProperties `json:"_meta"`
 	Reason    Cursor               `json:"reason"`
-	RequestID AnnotationsElement   `json:"requestId"`
+	RequestID ClientResult         `json:"requestId"`
 }

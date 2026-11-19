@@ -1,7 +1,9 @@
 package vdraft
 
 type GetPromptRequestParamsProperties struct {
-	Meta      GetTaskPayloadResult `json:"_meta"`
-	Arguments Arguments            `json:"arguments"`
-	Name      Cursor               `json:"name"`
+	Meta           AdditionalProperties `json:"_meta"`
+	Arguments      PurpleArguments      `json:"arguments"`
+	InputResponses AdditionalProperties `json:"inputResponses"`
+	Name           Cursor               `json:"name"`
+	RequestState   Default              `json:"requestState"`
 }

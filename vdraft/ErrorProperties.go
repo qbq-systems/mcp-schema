@@ -1,7 +1,7 @@
 package vdraft
 
 type ErrorProperties struct {
-	Code    Cursor     `json:"code"`
-	Data    PurpleData `json:"data"`
-	Message Cursor     `json:"message"`
+	Code    Cursor            `json:"code"`
+	Data    StructuredContent `json:"data"`
+	Message Cursor            `json:"message"`
 }

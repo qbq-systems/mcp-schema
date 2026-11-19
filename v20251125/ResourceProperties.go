@@ -1,0 +1,15 @@
+package v20251125
+
+type ResourceProperties struct {
+	Meta        GetTaskPayloadResult `json:"_meta"`
+	Annotations AnnotationsElement   `json:"annotations"`
+	Description Cursor               `json:"description"`
+	Icons       Audience             `json:"icons"`
+	MIMEType    Cursor               `json:"mimeType"`
+	Name        Cursor               `json:"name"`
+	Size        *Cursor              `json:"size,omitempty"`
+	Title       Cursor               `json:"title"`
+	URI         *BlobClass           `json:"uri,omitempty"`
+	Type        *JsonrpcClass        `json:"type,omitempty"`
+	URITemplate *BlobClass           `json:"uriTemplate,omitempty"`
+}

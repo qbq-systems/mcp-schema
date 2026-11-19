@@ -1,0 +1,7 @@
+package v20251125
+
+type PurpleRequests struct {
+	Description string           `json:"description"`
+	Properties  IndigoProperties `json:"properties"`
+	Type        AnnotationsType  `json:"type"`
+}

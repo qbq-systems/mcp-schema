@@ -1,8 +1,8 @@
 package vdraft
 
 type JSONRPCNotificationProperties struct {
-	Jsonrpc JsonrpcClass `json:"jsonrpc"`
-	Method  Default      `json:"method"`
-	Params  FluffyParams `json:"params"`
-	ID      *EmptyResult `json:"id,omitempty"`
+	Jsonrpc JsonrpcClass          `json:"jsonrpc"`
+	Method  Default               `json:"method"`
+	Params  PurpleParams          `json:"params"`
+	ID      *AdditionalProperties `json:"id,omitempty"`
 }

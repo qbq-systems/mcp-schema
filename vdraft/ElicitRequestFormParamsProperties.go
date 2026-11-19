@@ -1,9 +1,9 @@
 package vdraft
 
 type ElicitRequestFormParamsProperties struct {
-	Meta            GetTaskPayloadResult `json:"_meta"`
+	Meta            AdditionalProperties `json:"_meta"`
 	Message         Cursor               `json:"message"`
 	Mode            Mode                 `json:"mode"`
-	RequestedSchema RequestedSchema      `json:"requestedSchema"`
-	Task            AnnotationsElement   `json:"task"`
+	RequestedSchema *RequestedSchema     `json:"requestedSchema,omitempty"`
+	URL             *BlobClass           `json:"url,omitempty"`
 }

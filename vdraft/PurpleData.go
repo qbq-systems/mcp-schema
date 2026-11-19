@@ -1,5 +1,7 @@
 package vdraft
 
 type PurpleData struct {
-	Description string `json:"description"`
+	Properties StickyProperties `json:"properties"`
+	Required   []string         `json:"required"`
+	Type       TypeElement      `json:"type"`
 }

@@ -3,8 +3,8 @@ package vdraft
 type CallToolRequestRequired string
 
 const (
-	ID      CallToolRequestRequired = "id"
-	Jsonrpc CallToolRequestRequired = "jsonrpc"
-	Method  CallToolRequestRequired = "method"
-	Params  CallToolRequestRequired = "params"
+	Method        CallToolRequestRequired = "method"
+	Params        CallToolRequestRequired = "params"
+	PurpleID      CallToolRequestRequired = "id"
+	PurpleJsonrpc CallToolRequestRequired = "jsonrpc"
 )

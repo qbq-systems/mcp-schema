@@ -1,7 +1,7 @@
 package vdraft
 
 type SamplingMessageProperties struct {
-	Meta    GetTaskPayloadResult `json:"_meta"`
+	Meta    AdditionalProperties `json:"_meta"`
 	Content PurpleContent        `json:"content"`
-	Role    EmptyResult          `json:"role"`
+	Role    AdditionalProperties `json:"role"`
 }

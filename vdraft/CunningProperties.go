@@ -1,6 +1,6 @@
 package vdraft
 
 type CunningProperties struct {
-	AdditionalProperties EmptyResult     `json:"additionalProperties"`
-	Type                 AnnotationsType `json:"type"`
+	Code PurpleCode `json:"code"`
+	Data FluffyData `json:"data"`
 }

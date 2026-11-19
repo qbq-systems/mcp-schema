@@ -1,6 +1,7 @@
 package vdraft
 
 type PaginatedResultProperties struct {
-	Meta       GetTaskPayloadResult `json:"_meta"`
+	Meta       AdditionalProperties `json:"_meta"`
 	NextCursor Cursor               `json:"nextCursor"`
+	ResultType Cursor               `json:"resultType"`
 }

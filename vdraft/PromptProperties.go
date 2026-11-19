@@ -1,7 +1,7 @@
 package vdraft
 
 type PromptProperties struct {
-	Meta        GetTaskPayloadResult `json:"_meta"`
+	Meta        AdditionalProperties `json:"_meta"`
 	Arguments   Audience             `json:"arguments"`
 	Description Cursor               `json:"description"`
 	Icons       Audience             `json:"icons"`

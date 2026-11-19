@@ -1,6 +1,6 @@
 package vdraft
 
 type ListRootsResultProperties struct {
-	Meta  GetTaskPayloadResult `json:"_meta"`
-	Roots Messages             `json:"roots"`
+	Meta  AdditionalProperties `json:"_meta"`
+	Roots JSONArray            `json:"roots"`
 }

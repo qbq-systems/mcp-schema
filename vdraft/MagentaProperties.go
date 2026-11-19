@@ -1,5 +1,6 @@
 package vdraft
 
 type MagentaProperties struct {
-	ElicitationID Cursor `json:"elicitationId"`
+	Requested Cursor            `json:"requested"`
+	Supported SupportedVersions `json:"supported"`
 }

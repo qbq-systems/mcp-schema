@@ -1,0 +1,6 @@
+package v20251125
+
+type FluffyProperties struct {
+	Form Metadata `json:"form"`
+	URL  Metadata `json:"url"`
+}

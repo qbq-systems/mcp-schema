@@ -1,6 +1,6 @@
 package vdraft
 
 type IndigoProperties struct {
-	Elicitation FluffyElicitation `json:"elicitation"`
-	Sampling    FluffySampling    `json:"sampling"`
+	Schema Default      `json:"$schema"`
+	Type   JsonrpcClass `json:"type"`
 }

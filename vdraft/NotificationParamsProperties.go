@@ -1,5 +1,5 @@
 package vdraft
 
 type NotificationParamsProperties struct {
-	Meta GetTaskPayloadResult `json:"_meta"`
+	Meta AdditionalProperties `json:"_meta"`
 }

@@ -1,7 +1,7 @@
 package vdraft
 
 type JSONRPCErrorResponseProperties struct {
-	Error   EmptyResult  `json:"error"`
-	ID      EmptyResult  `json:"id"`
-	Jsonrpc JsonrpcClass `json:"jsonrpc"`
+	Error   AdditionalProperties `json:"error"`
+	ID      AdditionalProperties `json:"id"`
+	Jsonrpc JsonrpcClass         `json:"jsonrpc"`
 }

@@ -1,5 +1,5 @@
 package vdraft
 
 type HilariousProperties struct {
-	CreateMessage Metadata `json:"createMessage"`
+	AnyOf Of `json:"anyOf"`
 }

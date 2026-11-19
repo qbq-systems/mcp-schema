@@ -1,6 +1,7 @@
 package vdraft
 
 type CompleteResultProperties struct {
-	Meta       GetTaskPayloadResult `json:"_meta"`
+	Meta       AdditionalProperties `json:"_meta"`
 	Completion Completion           `json:"completion"`
+	ResultType Cursor               `json:"resultType"`
 }

@@ -1,0 +1,8 @@
+package v20260728
+
+type Priority struct {
+	Description string      `json:"description"`
+	Maximum     *int64      `json:"maximum,omitempty"`
+	Minimum     int64       `json:"minimum"`
+	Type        TypeElement `json:"type"`
+}

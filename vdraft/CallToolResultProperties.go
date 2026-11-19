@@ -1,8 +1,9 @@
 package vdraft
 
 type CallToolResultProperties struct {
-	Meta              GetTaskPayloadResult `json:"_meta"`
+	Meta              AdditionalProperties `json:"_meta"`
 	Content           Audience             `json:"content"`
 	IsError           Cursor               `json:"isError"`
-	StructuredContent GetTaskPayloadResult `json:"structuredContent"`
+	ResultType        Cursor               `json:"resultType"`
+	StructuredContent StructuredContent    `json:"structuredContent"`
 }

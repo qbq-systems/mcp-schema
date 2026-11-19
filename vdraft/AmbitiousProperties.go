@@ -1,5 +1,6 @@
 package vdraft
 
 type AmbitiousProperties struct {
-	Arguments Arguments `json:"arguments"`
+	Const Cursor `json:"const"`
+	Title Cursor `json:"title"`
 }

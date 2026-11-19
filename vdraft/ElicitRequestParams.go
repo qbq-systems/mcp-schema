@@ -1,6 +1,8 @@
 package vdraft
 
 type ElicitRequestParams struct {
-	AnyOf       []EmptyResult `json:"anyOf"`
-	Description string        `json:"description"`
+	Description string                            `json:"description"`
+	Properties  ElicitRequestFormParamsProperties `json:"properties"`
+	Required    []string                          `json:"required"`
+	Type        TypeElement                       `json:"type"`
 }

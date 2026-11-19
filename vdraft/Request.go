@@ -1,8 +1,8 @@
 package vdraft
 
 type Request struct {
-	Description string                      `json:"description"`
-	Properties  CancelTaskRequestProperties `json:"properties"`
-	Required    []CallToolRequestRequired   `json:"required"`
-	Type        AnnotationsType             `json:"type"`
+	Description string                         `json:"description"`
+	Properties  CreateMessageRequestProperties `json:"properties"`
+	Required    []CallToolRequestRequired      `json:"required"`
+	Type        TypeElement                    `json:"type"`
 }

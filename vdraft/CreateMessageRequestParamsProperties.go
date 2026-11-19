@@ -1,16 +1,15 @@
 package vdraft
 
 type CreateMessageRequestParamsProperties struct {
-	Meta             GetTaskPayloadResult `json:"_meta"`
+	Meta             AdditionalProperties `json:"_meta"`
 	IncludeContext   LoggingLevel         `json:"includeContext"`
 	MaxTokens        Cursor               `json:"maxTokens"`
-	Messages         Messages             `json:"messages"`
-	Metadata         Metadata             `json:"metadata"`
-	ModelPreferences AnnotationsElement   `json:"modelPreferences"`
+	Messages         JSONArray            `json:"messages"`
+	Metadata         ClientResult         `json:"metadata"`
+	ModelPreferences ClientResult         `json:"modelPreferences"`
 	StopSequences    StopSequences        `json:"stopSequences"`
 	SystemPrompt     Cursor               `json:"systemPrompt"`
-	Task             AnnotationsElement   `json:"task"`
 	Temperature      Default              `json:"temperature"`
-	ToolChoice       AnnotationsElement   `json:"toolChoice"`
+	ToolChoice       ClientResult         `json:"toolChoice"`
 	Tools            Audience             `json:"tools"`
 }

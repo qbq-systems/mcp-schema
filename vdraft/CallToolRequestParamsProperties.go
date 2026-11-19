@@ -1,8 +1,9 @@
 package vdraft
 
 type CallToolRequestParamsProperties struct {
-	Meta      GetTaskPayloadResult `json:"_meta"`
-	Arguments GetTaskPayloadResult `json:"arguments"`
-	Name      Cursor               `json:"name"`
-	Task      AnnotationsElement   `json:"task"`
+	Meta           AdditionalProperties `json:"_meta"`
+	Arguments      OutputSchemaClass    `json:"arguments"`
+	InputResponses AdditionalProperties `json:"inputResponses"`
+	Name           Cursor               `json:"name"`
+	RequestState   Default              `json:"requestState"`
 }

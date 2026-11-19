@@ -1,5 +1,5 @@
 package vdraft
 
 type AdditionalProperties struct {
-	AnyOf []AdditionalPropertiesAnyOf `json:"anyOf"`
+	Ref string `json:"$ref"`
 }

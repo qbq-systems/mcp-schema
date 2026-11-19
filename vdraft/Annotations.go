@@ -3,5 +3,5 @@ package vdraft
 type Annotations struct {
 	Description string                `json:"description"`
 	Properties  AnnotationsProperties `json:"properties"`
-	Type        AnnotationsType       `json:"type"`
+	Type        TypeElement           `json:"type"`
 }

@@ -1,11 +1,11 @@
 package vdraft
 
 type ServerCapabilitiesProperties struct {
-	Completions  Metadata     `json:"completions"`
-	Experimental Experimental `json:"experimental"`
-	Logging      Metadata     `json:"logging"`
-	Prompts      Roots        `json:"prompts"`
-	Resources    Resources    `json:"resources"`
-	Tasks        FluffyTasks  `json:"tasks"`
-	Tools        Roots        `json:"tools"`
+	Completions  ClientResult  `json:"completions"`
+	Experimental InputRequests `json:"experimental"`
+	Extensions   InputRequests `json:"extensions"`
+	Logging      ClientResult  `json:"logging"`
+	Prompts      Prompts       `json:"prompts"`
+	Resources    Resources     `json:"resources"`
+	Tools        Prompts       `json:"tools"`
 }
